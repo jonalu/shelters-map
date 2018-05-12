@@ -1,0 +1,24 @@
+{
+  "name": "dsb",
+  "version": "1.0.0",
+  "description": "Show public shelters in Norway in a map",
+  "main": "index.js",
+  "dependencies": {
+    "ol": "^4.6.5",
+    "parcel-bundler": "^1.8.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  },
+  "scripts": {
+    "start": "parcel index.html"
+  },
+  "keywords": [
+    "dsb",
+    "shelters",
+    "public",
+    "data"
+  ],
+  "author": "Jonas Lundeland",
+  "license": "ISC"
+}

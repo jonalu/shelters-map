@@ -1,0 +1,22 @@
+body {
+    background: #ddd;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+}
+
+.olControlAttribution {
+    bottom: 0 !important;
+    right: 0 !important;
+    padding: 5px;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    a {
+        color: #fff;
+    }
+}
