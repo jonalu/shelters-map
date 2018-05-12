@@ -4,14 +4,17 @@
   "description": "Show public shelters in Norway in a map",
   "main": "index.js",
   "dependencies": {
-    "ol": "^4.6.5",
-    "parcel-bundler": "^1.8.1"
+    "ol": "^4.6.5"
   },
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "gh-pages": "^1.1.0",
+    "node-sass": "^4.9.0",
+    "parcel-bundler": "^1.8.1"
   },
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "dsb",
