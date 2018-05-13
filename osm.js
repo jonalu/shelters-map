@@ -1,4 +1,4 @@
-import Map from 'ol/map';
+import Map from 'ol/Map';
 import View from 'ol/view';
 import OSM from 'ol/source/osm';
 import Tile from 'ol/layer/tile';
@@ -6,7 +6,7 @@ import Vector from 'ol/layer/vector';
 import VectorSource from 'ol/source/vector';
 import Feature from 'ol/feature'
 import GeoJSON from 'ol/format/geojson';
-import proj from 'ol/proj';
+import { transform } from 'ol/proj';
 
 const createMap = url =>
     new Map({
@@ -29,7 +29,7 @@ const createMap = url =>
     });
 
 const centerMap = (map) => {
-    map.getView().setCenter(proj.transform([15, 65], 'EPSG:4326', 'EPSG:3857'));
+    map.getView().setCenter(transform([15, 65], 'EPSG:4326', 'EPSG:3857'));
 };
 
 export default {

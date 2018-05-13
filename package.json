@@ -4,7 +4,7 @@
   "description": "Show public shelters in Norway in a map",
   "main": "index.js",
   "dependencies": {
-    "ol": "^4.6.5"
+    "ol": "^5.0.0-beta.12"
   },
   "devDependencies": {
     "gh-pages": "^1.1.0",
@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --public-url /shelters-map",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [
